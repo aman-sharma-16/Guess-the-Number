@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="heading">GUESS THE NUMBER</h2>
+    </header>
+    <main>
+      <div id="container" class="boxDesign">
+        <div id="hintBox">
+          <p id="hintText">Enjoy your game !!</p>
+        </div>
+        <div id="attemptsBox">
+          <p>Attempts left : <span id="attemptsLeft">9</span></p>
+        </div>
+
+        <div id="inputBox">
+          <input type="number" id="userInput" placeholder="Enter the value" />
+          <br />
+          <button class="btn" id="submitBtn" type="button">Submit</button>
+          <button class="btn">
+            <a
+              id="restart"
+              href="javascript:location.reload(true)"
+              style="color: whitesmoke"
+              >Restart</a
+            >
+          </button>
+        </div>
+      </div>
+      <div id="ruleBox" class="boxDesign">
+        <h2>Rules</h2>
+        <div id="rule">
+          <pre>The computer will generate a random number between 1 to 100.
+          <br>
+        You have to guess it within 9 attempts.</pre>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="main.js"></script>
+  </body>
+</html>

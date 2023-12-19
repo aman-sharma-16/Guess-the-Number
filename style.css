@@ -1,0 +1,127 @@
+:root {
+  --boxDesignColor: rgb(232, 229, 193);
+  --inputDesignColor: rgba(247, 234, 206, 0.97);
+  --buttonColor: rgb(8, 27, 27);
+  --containerBoxShadowColor: rgb(235, 235, 152);
+  --borderColor: whitesmoke;
+  --textColor: whitesmoke;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* outline: black 1px solid; */
+}
+
+body {
+  /* background: rgb(6, 203, 210); */
+  background-color: #fbb13c;
+}
+
+.boxDesign {
+  position: relative;
+  margin: 9vh auto;
+  width: 600px;
+  border: 2px solid var(--borderColor);
+}
+
+.heading {
+  position: relative;
+  padding-block: 15px;
+  margin-inline: 0px;
+  margin-block-start: 0px;
+  border: 2px solid var(--borderColor);
+  text-align: center;
+  height: 60px;
+  color: var(--textColor);
+  background-color: #f5bf69;
+  border-radius: 10px;
+}
+
+#container {
+  height: 360px;
+  box-shadow: 64px 64px 20px var(--containerBoxShadowColor) inset,
+    -64px -64px 20px var(--containerBoxShadowColor) inset,
+    5px 5px 16px rgb(82, 108, 105);
+  border-radius: 15px;
+  padding-block: 24px;
+  backface-visibility: hidden;
+}
+
+#ruleBox {
+  border-radius: 10px;
+  color: var(--textColor);
+  height: 140px;
+}
+
+#ruleBox > h2 {
+  text-align: center;
+}
+
+#rule {
+  text-align: center;
+  position: relative;
+  line-height: 0.5rem;
+}
+
+#hintBox,
+#attemptsBox,
+#inputBox {
+  width: 450px;
+  height: 48px;
+  background-color: var(--boxDesignColor);
+  border-radius: 10px;
+  color: black;
+  text-align: center;
+  position: relative;
+  margin-inline: auto;
+  font-style: oblique;
+  font-weight: bolder;
+  box-shadow: 5px 3px 6px gray;
+}
+
+#hintBox > p,
+#attemptsBox > p {
+  padding-block: 15px;
+}
+
+#inputBox {
+  margin-block: 16px;
+  height: 150px;
+}
+
+#userInput {
+  margin-block: 24px;
+  width: 400px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: var(--inputDesignColor);
+}
+
+#userInput::placeholder {
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(39, 38, 38);
+  font-weight: 500;
+}
+
+.btn {
+  background-color: var(--buttonColor);
+  height: 38px;
+  width: 150px;
+  margin-inline: 16px;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
+#restart:link {
+  color: black;
+  text-decoration: none;
+}
+
+#restart:visited {
+  color: black;
+  text-decoration: none;
+}
